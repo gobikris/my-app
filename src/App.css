@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+
+body{
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+
+}
+.card{
+  width: 20rem;
+  padding: 10px;
+  border-radius: 15px;
+
+
+  /* height: fit-content; */
+}
+.card:hover {
+  margin-top: -.25rem;
+  margin-bottom: .25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.1); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.t{
+  font-size: 10px;
+}
+.fw{
+  font-size:45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* disable content */
+
+ div:nth-child(1) > div > p:nth-child(9){
+  color: rgb(149, 145, 145);
+}
+div:nth-child(1) > div >p:nth-child(10){
+  color: rgb(149, 145, 145);
+}
+div:nth-child(1) > div >p:nth-child(11){
+  color: rgb(149, 145, 145);
+}
+div:nth-child(1) > div >p:nth-child(12){
+  color: rgb(149, 145, 145);
+}
+div:nth-child(2) > div >p:nth-child(12){
+  color: rgb(149, 145, 145);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* highlighting element */
+div:nth-child(2) > div > p:nth-child(5){
+  font-weight: bold;
+}
+div:nth-child(3) > div > p:nth-child(5){
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div:nth-child(3) > div > p:nth-child(11)::first-line {
+  font-weight: bold;
 }
